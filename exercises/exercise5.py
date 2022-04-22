@@ -6,11 +6,18 @@ Formatear las siguientes variables de tipo string en un único string.
 Restricción: Utilizar el operador +.
 """
 
+from this import d
+
+
 variable_01 = "¡Buenos "
 variable_02 = "días "
 variable_03 = "a todos!"
 
 # COMPLETAR - INICIO
+
+strings_concatenados = variable_01 + variable_02 + variable_03
+
+print(strings_concatenados)
 
 # COMPLETAR - FIN
 
@@ -29,6 +36,10 @@ usar operadores).
 
 # COMPLETAR - INICIO
 
+strings_concatenados = "¡Mamá ""estoy concatenando " "strings!"
+
+print(strings_concatenados)
+
 # COMPLETAR - FIN
 
 assert strings_concatenados == "¡Mamá estoy concatenando strings!"
@@ -45,6 +56,10 @@ variable_02 = 600
 variable_03 = " pesos a un amigo."
 
 # COMPLETAR - INICIO
+
+strings_concatenados = variable_01 + str(variable_02) + variable_03
+
+print(strings_concatenados)
 
 # COMPLETAR - FIN
 
@@ -65,6 +80,10 @@ variable_05 = "Ezequiel"
 
 # COMPLETAR - INICIO
 
+strings_concatenados = ("%s%d%s%d%s Se llama %s" % (variable_01, variable_02, variable_03, variable_02, variable_04, variable_05))
+
+print(strings_concatenados)
+
 # COMPLETAR - FIN
 
 assert (
@@ -83,6 +102,12 @@ variable_03 = " pesos que le debía a Ezequiel, me faltan $"
 variable_04 = 4
 
 # COMPLETAR - INICIO
+
+strings_concatenados = f"{variable_01}{variable_02}{variable_03}{variable_04}"
+
+
+print(strings_concatenados)
+
 
 # COMPLETAR - FIN
 
