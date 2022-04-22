@@ -11,6 +11,15 @@ Definir un diccionario para un 'Cliente' que contenga los siguiente valores:
 
 # COMPLETAR - INICIO
 
+from operator import truediv
+
+
+Cliente = { "Nombre": "Mario Pedernera",
+            "DNI": 56895632,
+            "Domicilio": "Los alamos 4509",
+            "Compras": ["cafetera", "TV 50 pulgadas", "mouse gamer"]}
+
+
 # COMPLETAR - FIN
 
 assert (
@@ -30,10 +39,15 @@ Definir un diccionario para las 'Compras' que contenga los siguiente valores:
 
 # COMPLETAR - INICIO
 
+Compras = { "Mario Pedernera": ["cafetera", "TV 50 pulgadas", "mouse gamer"],
+            "Ezequiel Castello": ["ipad", "ipod", "iphone"],
+            "Pablo Piristrelli": ["Reproductor de CD", "Videograbadora"]}
+
+
 # COMPLETAR - FIN
 
 assert (
-    (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgads", "mouse gamer"])
+    (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgadas", "mouse gamer"]) # Daba error xq decía "pulgads"
     and (Compras["Ezequiel Castello"] == ["ipad", "ipod", "iphone"])
     and (Compras["Pablo Piristrelli"] == ["Reproductor de CD", "Videograbadora"])
 )
@@ -52,6 +66,10 @@ diccionario = {
 }
 
 # COMPLETAR - INICIO
+
+clave1 = diccionario.get("clave1")
+
+print(clave1)
 
 # COMPLETAR - FIN
 
@@ -73,6 +91,10 @@ diccionario_2 = {
 
 # COMPLETAR - INICIO
 
+clave5 = diccionario_2.get("no hay", 5)
+
+print(clave5)
+
 # COMPLETAR - FIN
 
 assert clave5 == 5
@@ -91,6 +113,11 @@ diccionario_3 = {
 
 # COMPLETAR - INICIO
 
+keys = diccionario.keys()
+(a, b, c, d) = keys
+keys = [a, b, c, d]
+print(keys)
+
 # COMPLETAR - FIN
 
 assert keys == ["clave1", "clave2", "clave3", "clave4"]
@@ -108,6 +135,11 @@ diccionario_4 = {
 }
 
 # COMPLETAR - INICIO
+
+values = diccionario_4.values()
+(a, b, c, d) = values
+values = [a, b, c, d]
+print(values)
 
 # COMPLETAR - FIN
 
@@ -128,6 +160,10 @@ diccionario_5 = {
 
 # COMPLETAR - INICIO
 
+items = diccionario_5.items()
+(a, b, c, d) = items
+items = [a, b, c, d]
+print(items)
 # COMPLETAR - FIN
 
 assert items == [(1, 1111), (2, 2222), (3, 3333), (4, 4444)]
@@ -152,6 +188,10 @@ diccionario_7 = {
 }
 
 # COMPLETAR - INICIO
+
+diccionario_6.update(diccionario_7)
+
+print(diccionario_6)
 
 # COMPLETAR - FIN
 

@@ -11,6 +11,16 @@ numero_2 = 2
 numero_3 = 3
 
 # COMPLETAR - INICIO
+conjunto_1 = {0} # Si no lo inicializamos así lo toma como diccionario en vez de conjunto.
+conjunto_1.add(numero_1)
+conjunto_1.add(numero_2)
+conjunto_1.add(numero_3)
+
+(a, b, c, d) = conjunto_1
+
+conjunto_1 = {b, c, d}
+
+print(conjunto_1)
 
 # COMPLETAR - FIN
 
@@ -29,6 +39,13 @@ edad = "35"
 
 # COMPLETAR - INICIO
 
+conjunto_2 = {"5","6","7"}
+conjunto_2.add(nombre)
+conjunto_2.add(domicilio)
+conjunto_2.add(edad)
+
+print(conjunto_2)
+
 # COMPLETAR - FIN
 
 assert conjunto_2 == {"35", "Esteban", "7", "6", "Los sauces 3446", "5"}
@@ -43,6 +60,10 @@ conjunto_04 = {12, 4, 10, 21, 78}
 
 # COMPLETAR - INICIO
 
+conjunto_interseccion = conjunto_03 & conjunto_04
+
+print(conjunto_interseccion)
+
 # COMPLETAR - FIN
 
 assert conjunto_interseccion == {10, 4, 21}
@@ -55,6 +76,10 @@ conjunto_03 = {1, 23, 4, 8, 5, 10, 15, 21}
 conjunto_04 = {12, 4, 10, 21, 78}
 
 # COMPLETAR - INICIO
+
+conjunto_interseccion = conjunto_03 & conjunto_04
+
+print(conjunto_interseccion)
 
 # COMPLETAR - FIN
 
@@ -70,6 +95,10 @@ conjunto_06 = {5, 6, 7, 8}
 
 # COMPLETAR - INICIO
 
+conjunto_union = conjunto_05 | conjunto_06
+
+print(conjunto_union)
+
 # COMPLETAR - FIN
 
 assert conjunto_union == {1, 2, 3, 4, 5, 6, 7, 8}
@@ -83,6 +112,10 @@ conjunto_05 = {1, 2, 3, 4}
 conjunto_06 = {5, 6, 7, 8}
 
 # COMPLETAR - INICIO
+
+conjunto_union = conjunto_05 | conjunto_06
+
+print(conjunto_union)
 
 # COMPLETAR - FIN
 
@@ -98,6 +131,8 @@ conjunto_08 = {2, 4, 6, 8}
 
 # COMPLETAR - INICIO
 
+conjunto_diferencia = conjunto_07 - conjunto_08
+
 # COMPLETAR - FIN
 
 assert conjunto_diferencia == {1, 3, 5, 7}
@@ -111,6 +146,8 @@ conjunto_07 = {1, 2, 3, 4, 5, 6, 7, 8}
 conjunto_08 = {2, 4, 6, 8}
 
 # COMPLETAR - INICIO
+
+conjunto_diferencia = conjunto_07 - conjunto_08
 
 # COMPLETAR - FIN
 
@@ -126,6 +163,8 @@ conjunto_10 = {1, 2, 3, 5, 6, 7, 8}
 
 # COMPLETAR - INICIO
 
+conjunto_diferencia_simetrica = conjunto_09 ^ conjunto_10
+
 # COMPLETAR - FIN
 
 assert conjunto_diferencia_simetrica == {4, 9}
@@ -139,6 +178,8 @@ conjunto_09 = {1, 2, 3, 4, 5, 6, 7, 8, 9}
 conjunto_10 = {1, 2, 3, 5, 6, 7, 8}
 
 # COMPLETAR - INICIO
+
+conjunto_diferencia_simetrica = conjunto_09 ^ conjunto_10
 
 # COMPLETAR - FIN
 
